@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+</head>
+<style>
+    .layui-table{
+     width: 80%; 
+     margin: 0 auto; 
+     margin-top: 30px;   
+    }
+    #page{
+       margin-left: 300px;
+        margin-top: 100px;
+    }
+</style>
+
+<body>
+    <table class="layui-table">
+        <colgroup>
+          <col width="150">
+          <col width="200">
+          <col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>编号</th>
+            <th>位置</th>
+            <th>预约人数</th>
+            <th>预约时间</th>
+            <th>参会人数</th>
+            <th>会议概要</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>西面楼2层</td>
+            <td>100</td>
+            <td>2020-11-11 9:00</td>
+            <td>100</td>
+            <td>会议概要</td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>西面楼3层</td>
+            <td>100</td>
+            <td>2020-11-11 9:00</td>
+            <td>100</td>
+            <td>会议概要</td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>西面楼2层</td>
+            <td>100</td>
+            <td>2020-11-11 9:00</td>
+            <td>100</td>
+            <td>会议概要</td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>西面楼1层</td>
+            <td>100</td>
+            <td>2020-11-11 9:00</td>
+            <td>100</td>
+            <td>会议概要</td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>西面楼1层</td>
+            <td>100</td>
+            <td>2020-11-11 9:00</td>
+            <td>100</td>
+            <td>会议概要</td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>西面楼1层</td>
+            <td>100</td>
+            <td>2020-11-11 9:00</td>
+            <td>100</td>
+            <td>会议概要</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div id="page"></div>
+      <script src="layui/layui.all.js"></script>
+      <script>
+          layui.use('laypage', function(){
+     var laypage = layui.laypage;
+  
+     laypage.render({
+    elem: 'page' 
+    ,count: 50 
+    });
+   });
+      </script>
+</body>
+</html>

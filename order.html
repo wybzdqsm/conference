@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+</head>
+<style>
+     form{
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    .layui-input{
+        width: 70%;
+    }
+    .layui-form-select dl{
+        min-width: 70%;
+        margin-left: 100px;
+    }
+    .a{
+        margin-top: 10px;text-align: center;
+    }
+   
+
+</style>
+
+<body>
+    
+    <form class="layui-form" action="">
+        <div class="layui-form-item">
+          <label class="layui-form-label">请选择会议室编号</label>
+          <select name="city" lay-verify="required">
+            <option value=""></option>
+            <option value="0">001</option>
+            <option value="1">002</option>
+            <option value="2">003</option>
+            <option value="3">004</option>
+            <option value="4">005</option>
+          </select>
+        </div>
+
+    
+
+        <div class="layui-form-item">
+          <label class="layui-form-label">位置</label>
+          <div class="layui-input-block">
+            <input type="text" name="address" required lay-verify="required" placeholder="请输入会议室位置" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+    
+        <div class="layui-form-item">
+          <label class="layui-form-label">预约人数</label>
+          <input type="text" id="orderpeople" class="a" >
+        </div>
+       
+        <div class="layui-form-item">
+            <label class="layui-form-label">预约时间</label>
+            <input type="date" value="50"  name="date" class="a">
+          </div>
+
+          <div class="layui-form-item">
+            <label class="layui-form-label">参会人数</label>
+            <input type="text" id="joinpeople" class="a">
+          </div>
+        
+      
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">会议概要</label>
+            <div class="layui-input-block">
+              <textarea name="desc" placeholder="请输入会议概要" class="layui-textarea"></textarea>
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <div class="layui-input-block">
+              <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+              <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+          </div>
+  
+      </form>
+    
+      <script src="./layui/layui.all.js"></script>
+
+     
+</body>
+</html>

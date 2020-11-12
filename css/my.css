@@ -1,0 +1,26 @@
+.content{
+   width:70%;
+   margin-left: 15%;
+   padding: 100px;
+    
+}
+.avatar{
+     float: left;
+      margin-left: 100px;
+      margin-top: 50px;
+}
+.avatar img{
+    width: 70px;
+    height: 70px;
+}
+.info{
+    float: left;
+   margin-left: 100px;
+   margin-top: 10px;
+}
+.info-item{
+    
+    margin-bottom: 30px;
+    font-size: large;
+    color: darkgrey;
+}

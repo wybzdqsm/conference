@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+</head>
+<style>
+    .layui-table{
+     width: 80%; 
+     margin: 0 auto; 
+     margin-top: 30px;   
+    }
+    #page{
+       margin-left: 300px;
+        margin-top: 100px;
+    }
+    .layui-form-item{
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+    .layui-form-label{
+        width: 120px;
+    }
+</style>
+
+<body>
+
+    <div class="layui-form-item" >
+        
+        <div class="layui-inline">
+          <label class="layui-form-label">请输入会议室编号:</label>
+          <div class="layui-input-inline" style="width: 100px;">
+            <input type="text" name="" autocomplete="off" class="layui-input">
+          </div>
+          <button type="button" class="layui-btn">查询</button>
+        </div>
+   
+        
+      </div>
+
+    <table class="layui-table">
+        <colgroup>
+          <col width="150">
+          <col width="200">
+          <col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>编号</th>
+            <th>位置</th>
+            <th>可参会人数</th>
+            <th>是否有投影</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>西面楼2层</td>
+            <td>100</td>
+            <td>是</td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>西面楼3层</td>
+            <td>100</td>
+            <td>是</td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>西面楼2层</td>
+            <td>100</td>
+            <td>是</td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>西面楼1层</td>
+            <td>100</td>
+            <td>是</td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>西面楼1层</td>
+            <td>100</td>
+            <td>是</td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>西面楼1层</td>
+            <td>100</td>
+            <td>是</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div id="page"></div>
+      <script src="layui/layui.all.js"></script>
+      <script>
+          layui.use('laypage', function(){
+     var laypage = layui.laypage;
+  
+     laypage.render({
+    elem: 'page' 
+    ,count: 50 
+    });
+   });
+      </script>
+</body>
+</html>
